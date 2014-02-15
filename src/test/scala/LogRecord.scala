@@ -22,8 +22,13 @@ object LogRecordSpecification extends Properties("LogRecord") {
     *
     * could not find implicit value for parameter a1: org.scalacheck.Arbitrary[List[DataStructures.LogRecord]]
     *
+    * Implicit params in scala:
+    *
+    *   http://stackoverflow.com/questions/9530893/good-example-of-implicit-parameter-in-scala 
+    *   http://daily-scala.blogspot.com/2010/04/implicit-parameters.html
+    *
     **/
-    implicit lazy val arbLogRecord: Arbitrary[LogRecord] = Arbitrary(genLogRecord) 
+   implicit lazy val arbLogRecord: Arbitrary[LogRecord] = Arbitrary(genLogRecord) 
 
 
   /**
